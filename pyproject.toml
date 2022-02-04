@@ -45,6 +45,10 @@ classifiers = [
     "Programming Language :: Python :: 3 :: Only",
 ]
 
+packages = [
+    { include = "ruscorpora" },
+]
+
 [tool.poetry.urls]
 "Changelog" = "https://github.com/kunansy/RNC/blob/master/CHANGELOG.md"
 "Bug Tracker" = "https://github.com/kunansy/RNC/issues"
