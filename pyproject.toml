@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "ruscorpora"
-version = "0.7.0"
+version = "0.7.1"
 description = "Links to https://github.com/kunansy/rnc"
 authors = ["kunansy <kolobov.kirill@list.ru>"]
 license = "MIT"
