@@ -149,7 +149,7 @@ python-versions = ">=3.7"
 
 [[package]]
 name = "rnc"
-version = "0.8.0"
+version = "0.9.0"
 description = "API for Russian National Corpus"
 category = "main"
 optional = false
@@ -221,7 +221,7 @@ typing-extensions = {version = ">=3.7.4", markers = "python_version < \"3.8\""}
 [metadata]
 lock-version = "1.1"
 python-versions = ">=3.7,<4.0"
-content-hash = "84c3e544a5913f47d3d705e88410e2b7007e5720be5aa342390407c2629d16ba"
+content-hash = "a4bb48395d04e67b585753bf9e83cb4fa7ea27651a213b8384029f57a1a3f313"
 
 [metadata.files]
 aiofiles = [
@@ -519,8 +519,8 @@ multidict = [
     {file = "multidict-6.0.2.tar.gz", hash = "sha256:5ff3bd75f38e4c43f1f470f2df7a4d430b821c4ce22be384e1459cb57d6bb013"},
 ]
 rnc = [
-    {file = "rnc-0.8.0-py3-none-any.whl", hash = "sha256:5bf488e8ea21fc5fd99fe4b238f41b38f3f5229f9976c020caeaf65326911176"},
-    {file = "rnc-0.8.0.tar.gz", hash = "sha256:3fc32e7b0f739af921ecf4b8735c5202f13632dfd0d2ef244e02f86778597717"},
+    {file = "rnc-0.9.0-py3-none-any.whl", hash = "sha256:fd877e8174ee759bd08924cbaadd8a556797a60e494fe04cb85cb048fa1f49d3"},
+    {file = "rnc-0.9.0.tar.gz", hash = "sha256:d7873c4b21ffbb925e436a01b24f13ad94d974c1790af51bde0f5b808b803f03"},
 ]
 soupsieve = [
     {file = "soupsieve-2.3.1-py3-none-any.whl", hash = "sha256:1a3cca2617c6b38c0343ed661b1fa5de5637f257d4fe22bd9f1338010a1efefb"},
