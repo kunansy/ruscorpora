@@ -1,10 +1,8 @@
-__version__ = '0.9.0'
+__version__ = '0.10.0'
 
 
 import logging
-import os
 import sys
-from pathlib import Path
 from typing import Union
 
 from rnc.corpora import (
@@ -23,7 +21,7 @@ from rnc.corpora import (
     OUTPUT_FORMATS,
     SEARCH_FORMATS
 )
-from rnc.corpora_params import Mycorp
+from rnc.corpora_params import Mycorp, Languages # noqa: F401
 from rnc.examples import (
     MainExample,
     Paper2000Example,
@@ -43,9 +41,7 @@ MSG_FMT = "[{asctime},{msecs:3.0f}] [{levelname}] " \
 DATE_FMT = "%d.%m.%Y %H:%M:%S"
 
 LOGGER_NAME = "rnc"
-LOG_FOLDER = Path('logs')
-LOG_FILE = LOG_FOLDER / f"{LOGGER_NAME}.log"
-os.makedirs(LOG_FOLDER, exist_ok=True)
+LOG_FILE = f"{LOGGER_NAME}.log"
 
 
 formatter = logging.Formatter(
@@ -57,7 +53,7 @@ stream_handler.setFormatter(formatter)
 
 file_handler = logging.FileHandler(
     LOG_FILE, delay=True, encoding='utf-8')
-file_handler.setLevel(logging.DEBUG)
+file_handler.setLevel(logging.CRITICAL)
 file_handler.setFormatter(formatter)
 
 logger = logging.getLogger(LOGGER_NAME)
